@@ -10,11 +10,6 @@ This is a simple ATM Machine implementation written in Java.
 - [Features](#features)
 - [Concepts Used](#concepts-used-in-this-project)
 
-## Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Concepts Used](#concepts-used-in-this-project)
-
 ## Overview
 
 This project simulates an ATM Machine with basic operations such as viewing balance, withdrawing amount, depositing amount, viewing a mini statement, and exiting the system.
