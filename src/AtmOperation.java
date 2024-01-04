@@ -3,7 +3,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AtmOperation implements ATMoperationInterface {
+public class AtmOperation extends ATMoperationInterface {
 
   ATM atm = new ATM();
   List<String> status = new ArrayList<String>();

@@ -1,9 +1,9 @@
-public interface ATMoperationInterface {
-  public void viewBalance();
+public abstract class ATMoperationInterface {
+  abstract public void viewBalance();
 
-  public void withdrawAmount(double withdrawAmount);
+  abstract public void withdrawAmount(double withdrawAmount);
 
-  public void depositAmount(double depositAmount);
+  abstract public void depositAmount(double depositAmount);
 
-  public void viewMiniStatement();
+   abstract public void viewMiniStatement();
 }
