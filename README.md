@@ -1,18 +1,35 @@
-## Getting Started
+# ATM Machine
+[Demo Video](https://drive.google.com/file/d/1X5uWGASzCwUCCEhC8sBOaT0ALfGYMmzp/view?usp=sharing)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+![ATM Machine](https://raw.githubusercontent.com/darskp/ATM-Machine/main/ATM%20Machine.PNG)
 
-## Folder Structure
+This is a simple ATM Machine implementation written in Java.
 
-The workspace contains two folders by default, where:
+# Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Concepts Used](#concepts-used-in-this-project)
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Concepts Used](#concepts-used-in-this-project)
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Overview
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+This project simulates an ATM Machine with basic operations such as viewing balance, withdrawing amount, depositing amount, viewing a mini statement, and exiting the system.
 
-## Dependency Management
+## Features
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- **ATM Number and PIN Verification:** Verify the entered ATM number and PIN before allowing access to the ATM operations.
+- **View Available Balance:** Check the available balance in the account.
+- **Withdraw Amount:** Withdraw a specified amount from the account.
+- **Deposit Amount:** Deposit a specified amount into the account.
+- **View Mini Statement:** View a mini statement of recent transactions.
+- **Exit:** Exit the ATM system.
+
+## Concepts Used in This Project
+ -  Encapsulation
+ -  Abstraction
+ -  Upcasting
+ -  Method Overriding
