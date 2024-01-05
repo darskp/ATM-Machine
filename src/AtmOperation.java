@@ -63,23 +63,28 @@ public class AtmOperation extends ATMoperationInterface {
 
   @Override
   public void withdrawAmount(double withdrawAmount) {
-    if (withdrawAmount < atm.getBalance()) {
-      System.out.println("Collect the cash " + withdrawAmount);
-      amountTrack.add(withdrawAmount);
-      status.add("Amount Withdrawn");
-      atm.setBalance(atm.getBalance() - withdrawAmount);
-      runningAmount.add(atm.getBalance());
-      transactionTime.add(LocalDateTime.now());
-    } else {
-      try {
-        throw new InsufficientBalanceException("Insufficient Balance");
-      } catch (InsufficientBalanceException e) {
-        System.out.println(e.getMessage());
-        System.out.println("------------------");
-      } catch (Exception e) {
-        System.out.println(e);
+    if (withdrawAmount % 500 == 0) {
+      if (withdrawAmount < atm.getBalance()) {
+        System.out.println("Collect the cash " + withdrawAmount);
+        amountTrack.add(withdrawAmount);
+        status.add("Amount Withdrawn");
+        atm.setBalance(atm.getBalance() - withdrawAmount);
+        runningAmount.add(atm.getBalance());
+        transactionTime.add(LocalDateTime.now());
+      } else {
+        try {
+          throw new InsufficientBalanceException("Insufficient Balance");
+        } catch (InsufficientBalanceException e) {
+          System.out.println(e.getMessage());
+          System.out.println("------------------");
+        } catch (Exception e) {
+          System.out.println(e);
+        }
       }
+      viewBalance();
+    } else {
+      System.out.println("Please Enter the Amount in Multiple of 500");
+      System.out.println();
     }
-    viewBalance();
   }
 }
